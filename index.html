@@ -8,13 +8,15 @@
     <title>Proyecto 2</title>
 
     <script src="https://kit.fontawesome.com/676ee9172b.js" crossorigin="anonymous"></script>
-    <!-- CSS only -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bodyfabian ">
+<body class="bodyfabian">
     <!--      BARRA DE NAVEGACION ESTA AQUI     -->
     <nav
         class=" container-md  bg-dark rounded-1 py-3 text-white navbar navbar-expand-lg d-flex justify-content-around shadow-lg mb-2">
@@ -50,14 +52,45 @@
                 </div>
             </div>
         </div>
-        <div class="ladoderecho  bg-light align-self-start rounded mb-3">
+        <div class="ladoderecho limiteancho bg-light align-self-start rounded mb-3">
             <div class="instafeed">
-                <div class="card-header p-2">
-                    <img class="rounded-circle wildysborder" src="imgs/wildysp.jpg" width="50px" alt="">   wildyslomelly
+                <div class="card-header p-2 d-flex">
+                    <div class="profilepicwildys"><img class="rounded-circle wildysborder" src="imgs/wildysp.jpg" width="50px" alt="">
+                        <div class="ring"></div>
+                    </div>  
+                    <div class="solotexto d-flex flex-wrap flex-column ps-3"><a class="text-decoration-none text-dark usuario fw-semibold"><span>wildyslomelly</span></a><a href="https://www.google.com/maps/place/Cajic%C3%A1,+Cundinamarca,+Colombia/@4.9207926,-74.0334728,15z/data=!3m1!4b1!4m5!3m4!1s0x8e40776312d8c353:0x308b2cd7eafd3454!8m2!3d4.9187217!4d-74.022557" class="ubicacion">Cajicá, Cundinamarca</a></div>
                 </div>
-                <div class="d-flex">
-                    <img src="imgs/wildyspost.jpg" width="100%" alt="">
-                </div>
+                <div id="carouselExampleIndicators" class="carousel slide d-flex" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item">
+                        <img src="imgs/wildyspost.jpg" width="100%">
+                  
+                      </div>
+                      <div class="carousel-item">
+                        <img src="imgs/wildyspost2.jpg" width="100%">
+                  
+                      </div>
+                      <div class="carousel-item active">
+                    <img src="https://bitp2.netlify.app/imgs/wildyspost.jpg" width="100%">
+                  
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  
+                  <!-- End Example Code -->
                 <div class="card-footer d-flex justify-content-around p-2">
                     <div class="likescount"><i class="fa-solid fa-heart style=" red""></i>
                         <a>100 likes</a>
