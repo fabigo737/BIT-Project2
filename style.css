@@ -39,18 +39,30 @@ ul a {
     height: 50px;
     outline: 4px dashed rgb(5, 218, 5);
     border-radius: 100%;
-    animation: loading 3s ease-in-out ;
+    animation: loading 6s ease-in-out infinite ;
     position: absolute;
     top: 0;
 }
 
 @keyframes loading {
-    0 {
+    0% {
         transform: rotate(0deg);
+        outline: 4px dashed rgb(5, 218, 76);
+    }
+
+    25%{
+        transform: rotate(0deg);
+        
+    }
+
+    75%{
+        outline: 4px dashed rgb(5, 204, 218);
+
     }
 
     100% {
         transform: rotate(360deg);
+        outline: 4px dashed rgb(5, 218, 101);
     }
 }
 
