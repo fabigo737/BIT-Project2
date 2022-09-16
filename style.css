@@ -30,9 +30,6 @@ ul a {
 
 
 @media only screen and (max-width: 768px) { 
-    .wildysborder{
-        border: 5px dashed rgb(218, 5, 5);
-    }
     .menumobile{
         display: block;
     }
